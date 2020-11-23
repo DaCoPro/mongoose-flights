@@ -1,4 +1,4 @@
-const { Mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
 const flightSchema = new mongoose.Schema ({
     airline: {
@@ -12,7 +12,7 @@ const flightSchema = new mongoose.Schema ({
         type: Number,
         required: true
         //need to require 10 - 9999
-    }
+    },
     departs: {
         type: Date,
         //need to default to one year from date created
