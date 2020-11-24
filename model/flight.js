@@ -19,15 +19,16 @@ const flightSchema = new mongoose.Schema ({
     },
     flightNo: {
         type: Number,
-        required: true
-        //need to require 10 - 9999
+        required: true,
+        min: 10,
+        max: 9999
     },
     departs: {
         type: Date,
         //need to default to one year from date created
     },
     destinations: {
-        type: [String],
+        type: [destinationSchema],
     }
 })
 
