@@ -1,5 +1,14 @@
 const mongoose = require("mongoose");
 
+const destinationSchema = new mongoose.Schema ({
+    airport: {
+        type: String
+    },
+    arrival: {
+        type: Date
+    }
+})
+
 const flightSchema = new mongoose.Schema ({
     airline: {
         type: String,
@@ -16,6 +25,9 @@ const flightSchema = new mongoose.Schema ({
     departs: {
         type: Date,
         //need to default to one year from date created
+    },
+    destinations: {
+        type: [String],
     }
 })
 
