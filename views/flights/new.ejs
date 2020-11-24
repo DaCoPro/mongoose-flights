@@ -6,8 +6,11 @@
     <title>New Flight</title>
 </head>
 <body>
-    <h1>Enter a new Flight</h1>
-    <form action="/flights" method="POST"></form>
+    <h1>Enter a new Flight
+      <a href="/">Home</a>
+      <a href="/flights/new">Add Flight</a>
+    </h1>
+    <form action="/flights" method="POST">
       <label>Airline:
         <input type="text" name="airline">
       </label><br>
@@ -15,11 +18,12 @@
         <input type="text" name="airport">
       </label><br>
       <label>Flight No.:
-        <input type="text" name="flightNo">
+        <input type="number" name="flightNo">
       </label><br>
       <label>Departing Date:
-        <input type="text" name="departs">
+        <input type="date" name="departs">
       </label><br>
       <input type="submit" value="Add Flight">
+    </form>
 </body>
 </html>
