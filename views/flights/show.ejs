@@ -28,20 +28,6 @@
             </tr>
         </tbody>
     </table>
-    <div>
-        <br>
-        <br>
-        <br>
-        <form method= "POST" action="/flights/<%= flight._id %>">
-            <label> Destination Airport: </label>
-            <input type="text" name="airport"><br>
-            <label>Arrival Time: </label>
-            <input type="date" name="arrival"><br>
-            <input type="submit" value="Add Destination">
-        </form>
-    </div>
-    <br>
-    <br>
     <br>
     <table>
         <thead>
@@ -59,5 +45,21 @@
     
         </tbody>
     </table>
+    <div>
+        <br>
+        <br>
+        <br>
+        <form method= "POST" action="/flights/<%= flight._id %>">
+            <label> Destination Airport: </label>
+            <input type="text" name="airport"><br>
+            <label>Arrival Time: </label>
+            <input type="date" name="arrival"><br>
+            <input type="submit" value="Add Destination">
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+   
 </body>
 </html>
