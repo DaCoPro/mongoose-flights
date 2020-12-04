@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const destinationSchema = new mongoose.Schema ({
     airport: {
         type: String
