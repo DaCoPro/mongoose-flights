@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Deets page
+        <a href="/">Home</a>
+        <a href="/flights/new">Add Flight</a>
+    </h1>
+    <form id="add-performer-form" action="/flights/<%= id %>/tickets" method="POST">
+        <label>Seat:</label>
+        <input type="text" name="seat" required pattern="[A-F][1-9]\d?">
+        <label>Price:</label>
+        <input type="text" name="price">
+        <input type="submit" value="Add Tickets">
+      </form>
